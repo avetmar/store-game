@@ -1,3 +1,30 @@
 .footer
-    background-color: $color-blue-dark
-    grid-column: full-start / full-end
+	background-color: $color-blue-dark
+	grid-column: full-start / full-end
+	padding: 8rem 12%
+	border-top: .3rem solid $color-gray-light
+	&__logo
+		display: block
+		text-align: center
+	&__menu
+		list-style-type: none
+		margin-top: 8rem
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		gap: 3rem
+		justify-content: center
+	.footer__link
+		&:link, &:visited
+			font-size: 1.6rem
+			font-weight: 300
+			text-transform: uppercase
+			color: $color-gray-light				
+			text-decoration: none
+			text-align: center
+			transition: .3s all
+			display: inline-block
+		&:hover, &:active
+			color: $color-green-dark
+			transform: translateY(-.3rem)
+			
